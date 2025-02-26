@@ -1,11 +1,16 @@
 import React from "react";
-import { HomeIcon } from "../icons/icons";
+import { HomeIcon, PhotoLibraryIcon } from "../icons/icons";
 
 export const navItemsData = [
   {
     name: "Home",
     url: "/",
     icon: <HomeIcon fontSize="small" />,
+  },
+  {
+    name: "Photos",
+    url: "/photos",
+    icon: <PhotoLibraryIcon fontSize="small" />,
   },
 ];
 
@@ -19,10 +24,8 @@ const NavItems = ({ activeItem, isMobile }) => {
             <a href={item.url} key={index} passHref>
               <span
                 className={`${
-                  activeItem === index
-                    ? "text-primary"
-                    : "text-black dark:text-white"
-                } text-white`}
+                  activeItem === index ? "text-primary" : "text-white "
+                } `}
               >
                 {item.name}
               </span>

@@ -44,6 +44,8 @@ const Header = ({ activeItem }) => {
 
           {/* Nav links */}
           <div className=" flex items-center gap-4">
+            <NavItems key={1} activeItem={activeItem} isMobile={false} />
+
             {/* mobile */}
 
             {/* menu toggler */}

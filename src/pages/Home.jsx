@@ -11,8 +11,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-[url(../src/assets/hero.png)] bg-no-repeat bg-cover max-w-screen xl:max-h-screen  ">
-        <Header />
+      <div className="bg-[url(../src/assets/hero.png)] bg-no-repeat bg-cover max-w-screen max-h-screen  ">
+        <Header activeItem={0} />
         <Hero />
         <OurPosts
           postsData={postsData}
