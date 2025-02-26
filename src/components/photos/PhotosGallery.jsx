@@ -4,7 +4,7 @@ import PhotoCard from "./PhotoCard";
 import Loader from "../Loader/Loader";
 import { styles } from "../../styles/style";
 
-const PhotoGallery = ({ photos }) => {
+const PhotosGallery = ({ photos }) => {
   const [pageNum, setPageNum] = useState(1);
 
   const fetchNextPageData = () => {
@@ -29,4 +29,4 @@ const PhotoGallery = ({ photos }) => {
   );
 };
 
-export default PhotoGallery;
+export default PhotosGallery;

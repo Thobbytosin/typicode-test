@@ -14,7 +14,7 @@ export const navItemsData = [
   },
 ];
 
-const NavItems = ({ activeItem, isMobile }) => {
+const NavItem = ({ activeItem, isMobile }) => {
   return (
     <>
       {/* laptop */}
@@ -59,4 +59,4 @@ const NavItems = ({ activeItem, isMobile }) => {
   );
 };
 
-export default NavItems;
+export default NavItem;

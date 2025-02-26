@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaHamburger } from "react-icons/fa";
 import { styles } from "../../styles/style";
-import NavItems from "../NavItems.Jsx";
+import NavItem from "../NavItem";
 
 const Header = ({ activeItem }) => {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -44,7 +44,7 @@ const Header = ({ activeItem }) => {
 
           {/* Nav links */}
           <div className=" flex items-center gap-4">
-            <NavItems key={1} activeItem={activeItem} isMobile={false} />
+            <NavItem key={1} activeItem={activeItem} isMobile={false} />
 
             {/* mobile */}
 
@@ -79,7 +79,7 @@ const Header = ({ activeItem }) => {
                 </h3>
               </a>
             </div>
-            <NavItems activeItem={activeItem} isMobile={true} />
+            <NavItem activeItem={activeItem} isMobile={true} />
           </div>
 
           <div className="">
